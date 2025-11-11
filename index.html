@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Image Social Share Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      text-align: center;
+      margin: 0;
+      padding: 30px;
+    }
+    h1 {
+      margin-bottom: 12px;
+    }
+    img {
+      width: 320px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .share-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin: 18px 0;
+    }
+    .share-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: box-shadow 0.2s, transform 0.2s;
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,0.09);
+    }
+    .share-btn.facebook { background: #1877f3; }
+    .share-btn.twitter  { background: #1da1f2; }
+    .share-btn.whatsapp { background: #25d366; }
+    .share-btn.linkedin { background: #0a66c2; }
+    .share-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+      display: block;
+    }
+    .share-btn:hover {
+      box-shadow: 0 4px 12px 0 rgba(0,0,0,0.12);
+      transform: translateY(-2px) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Generated Image</h1>
+  <img src="https://picsum.photos/536/354" alt="AI Generated" />
+
+  <div class="share-buttons">
+    <!-- Facebook -->
+    <a class="share-btn facebook"
+       href="https://www.facebook.com/sharer/sharer.php?u=https://picsum.photos/536/354"
+       target="_blank" rel="noopener" aria-label="Share on Facebook"
+    ><svg viewBox="0 0 24 24"><path d="M22 12c0-5.521-4.479-10-10-10S2 6.479 2 12c0 5 3.657 9.127 8.438 9.876v-6.988H7.898v-2.888h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.261c-1.242 0-1.631.771-1.631 1.561v1.875h2.773l-.443 2.888h-2.33v6.988C18.343 21.127 22 17 22 12"/></svg>
+    </a>
+    <!-- Twitter (X) -->
+    <a class="share-btn twitter"
+       href="https://twitter.com/intent/tweet?url=https://picsum.photos/536/354&text=Check+out+this+AI+generated+image!"
+       target="_blank" rel="noopener" aria-label="Share on Twitter"
+    ><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.38.36a9.07 9.07 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.6 0-4.52 2.18-4.52 4.9 0 .39.03.75.09 1.08C7.69 5.7 4.06 3.81 1.64.79a4.9 4.9 0 0 0-.61 2.46c0 1.71.87 3.22 2.19 4.12A4.48 4.48 0 0 1 1 6.56v.06c0 2.39 1.62 4.38 3.86 4.84-.4.11-.82.17-1.25.17-.3 0-.59-.03-.87-.08.59 1.89 2.31 3.29 4.33 3.33-1.58 1.33-3.58 2.14-5.76 2.14H0c2.05 1.41 4.5 2.23 7.14 2.23 8.57 0 13.27-7.37 13.27-13.77 0-.21 0-.41-.02-.61A10.08 10.08 0 0 0 23 3z"/></svg>
+    </a>
+    <!-- WhatsApp -->
+    <a class="share-btn whatsapp"
+       href="https://api.whatsapp.com/send?text=Check+out+this+AI+generated+image!+https://picsum.photos/536/354"
+       target="_blank" rel="noopener" aria-label="Share on WhatsApp"
+    ><svg viewBox="0 0 24 24"><path d="M20.52 3.5A11.7 11.7 0 0 0 12.07 0C5.65 0 .32 5.34.32 11.75c0 2.07.57 4.1 1.67 5.87L0 24l6.52-2c1.66 1.01 3.56 1.53 5.54 1.53h.02c7.1 0 12.84-5.74 12.84-12.83 0-3.43-1.32-6.66-3.7-9.2z"/></svg>
+    </a>
+    <!-- LinkedIn -->
+    <a class="share-btn linkedin"
+       href="https://www.linkedin.com/shareArticle?mini=true&url=https://picsum.photos/536/354&title=Check+out+this+AI+generated+image&summary=This+image+was+created+with+AI&source=YourSiteName"
+       target="_blank" rel="noopener" aria-label="Share on LinkedIn"
+    ><svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5V24H0V8zm7-1h4.75v2.2h.06c.66-1.25 2.27-2.58 4.67-2.58 5 0 5.92 3.3 5.92 7.58V24h-5v-7.5c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.89 1.96-2.89 3.98V24H7V7z"/></svg>
+    </a>
+  </div>
+  <p style="color:#667; margin-top:24px; font-size:15px;">
+    Replace <code>https://picsum.photos/536/354</code> with your actual image or page link for real sharing.
+  </p>
+</body>
+</html>
