@@ -1,0 +1,4 @@
+LINKEDIN URL:https://www.linkedin.com/shareArticle?mini=true&url=https://www.google.com
+FACEBOOK URL: https://www.facebook.com/sharer/sharer.php?u=example.org
+TWITTER X : https://twitter.com/intent/tweet?url=https://www.google.com&text=text
+PINTEREST: https://pinterest.com/pin/create/button/?url=https://www.google.com&media=&description=text
