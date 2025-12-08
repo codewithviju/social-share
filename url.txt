@@ -4,3 +4,4 @@ TWITTER X : https://twitter.com/intent/tweet?url=https://www.google.com&text=tex
 PINTEREST: https://pinterest.com/pin/create/button/?url=https://www.google.com&media=&description=text
 TELEGRAM: https://t.me/share/url?url={url}&text={text}
 
+ngrok config add-authtoken 30lR5gQxSjlntYbfsvOVl6tE4BD_3etCxNrEL82tzLdupCiFh
